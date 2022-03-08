@@ -55,7 +55,7 @@ def get_index(request):
     template_obj = get_template("index.html")
 
     result = template_obj.render(parm)
-
+    print(result)
     return HttpResponse(result)
 
 
