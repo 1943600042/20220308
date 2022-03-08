@@ -61,9 +61,11 @@ ROOT_URLCONF = 'Demo01.urls'
 #templates模板的配置
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'BACKEND': 'django.template.backends.django.DjangoTemplates', # django模板引擎
+        # 静态文件的地址以及文件夹名
+        'DIRS': [os.path.join(BASE_DIR,"template")],
         'APP_DIRS': True,
+        # 是一些针对后端的设置
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',

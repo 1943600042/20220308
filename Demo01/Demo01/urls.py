@@ -23,5 +23,9 @@ urlpatterns = [
     path("index/",index),
     path("about/",about),
     re_path("mening/",re_send),
-    re_path("test/(\d*)/(\d*)/",test)
+    re_path("test/(\d*)/(\d*)/",test),
+    # path("indexhtml/",indexhtml),
+    re_path("indexhtml/(\d*)",indexhtml),
+    path("getindex/",get_index),
+    path("oneindex/",oneindex),
 ]
