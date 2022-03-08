@@ -28,4 +28,5 @@ urlpatterns = [
     re_path("indexhtml/(\d*)",indexhtml),
     path("getindex/",get_index),
     path("oneindex/",oneindex),
+    path("twoindex/",twoindex),
 ]

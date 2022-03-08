@@ -67,3 +67,13 @@ def oneindex(request):
     return render_to_response('index.html',parm)
     pass
 
+
+
+from django.shortcuts import render
+
+
+def twoindex(request):
+    parm = {'name': 'spend', 'age': 343}
+    return render(request, 'index.html', parm)
+
+
