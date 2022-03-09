@@ -39,6 +39,7 @@ def indexhtml(request,id):
     parmas = {'name': 'wang', 'age': id}
     content_obj = Context(parmas)
     result = template_obj.render(content_obj)
+    print(result)
     return HttpResponse(result)
 
 
