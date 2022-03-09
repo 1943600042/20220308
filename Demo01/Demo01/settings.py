@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app01',
+    'app01.templatetags',
 ]
 
 # middleware中间件
@@ -129,5 +131,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
 # 静态文件的配置
-STATIC_URL = '/static/'
+STATIC_URL = '/static/' #静态文件路由
+# 静态文件的目录地址
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
